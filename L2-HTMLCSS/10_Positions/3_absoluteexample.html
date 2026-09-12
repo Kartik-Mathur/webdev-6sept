@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 20px;
+            border: 1px solid black;
+        }
+
+        .div1{
+            margin: 0;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .greatgrandparent{
+            position: relative;
+        }
+
+        .grandparent{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="greatgrandparent">
+        I am great grandparent
+        <div class="grandparent">
+            I am grandparent
+            <div class="parent">
+                I am parent
+                <div class="div1">I am div1</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

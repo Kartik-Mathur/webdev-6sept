@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            text-align: center;
+            background-color: rgb(65, 65, 65);
+            color: white;
+            position: sticky;
+            top: 0;
+            height: 30px;
+        }
+
+        .language,
+        .section {
+            height: 100vh;
+        }
+
+        .section {
+            padding-top: 40px;
+        }
+
+        .section1 {
+            background-color: aqua;
+        }
+
+        .section2 {
+            background-color: lightcoral;
+        }
+
+        .section3 {
+            background-color: lightgreen;
+        }
+
+        /* Anchor links */
+        /* lvha */
+        /* 
+            l: link (by default)
+            v: visited (click hone ke baad)
+            h: hover (cursor uske upar rakh diya)
+            a: active (press karke rakha hua hai link ko)
+        */
+        .navlink:link {
+            color: white;
+            text-decoration: none;
+            /* removes underline */
+        }
+
+        .navlink:visited {
+            color: white
+        }
+
+        .navlink:hover {
+            text-decoration: underline;
+        }
+
+        .navlink:active {
+            color: blue;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a class="navlink" href="#">CPP</a>
+        <a class="navlink" href="#">Java</a>
+        <a class="navlink" href="#">Python</a>
+    </div>
+
+    <div class="language cpp">
+        CPP Content
+    </div>
+    <div class="language java">
+        Java Content
+    </div>
+    <div class="language python">
+        Python Content
+    </div>
+
+
+    <div class="nav">
+        <a class="navlink" href="#section1">Section 1</a>
+        <a class="navlink" href="#section2">Section 2</a>
+        <a class="navlink" href="#section3">Section 3</a>
+    </div>
+
+    <div id="section1" class="section section1">I am section 1</div>
+    <div id="section2" class="section section2">I am section 2</div>
+    <div id="section3" class="section section3">I am section 3</div>
+
+</body>
+
+</html>

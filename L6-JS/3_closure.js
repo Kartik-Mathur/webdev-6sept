@@ -1,5 +1,5 @@
 // Because JS supports HOF, because of it closure comes into picture....
-
+let a = 20, b = -100;
 function createFun(a,b){
 
     function sum(){
@@ -11,6 +11,7 @@ function createFun(a,b){
 
 
 let f = createFun(60, 20);
+console.log(f());
 /*
 f = function sum(){
         return a + b;

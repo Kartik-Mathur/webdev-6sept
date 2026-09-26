@@ -1,0 +1,18 @@
+let url = 'http://songs.com/power.mp4'
+undefined
+url.split('/')
+(4) ['http:', '', 'songs.com', 'power.mp4']
+url.split('/').pop()
+'power.mp4'
+let songName = url.split('/').pop();
+undefined
+songName.split('.')
+(2) ['power', 'mp4']
+songName.split('.')[0]
+'power'
+songName.split('.')[0] + '.zip'
+'power.zip'
+let newUrl = 'https://newsongs.mp4' + songName.split('.')[0] + '.zip'
+undefined
+newUrl
+'https://newsongs.mp4power.zip'

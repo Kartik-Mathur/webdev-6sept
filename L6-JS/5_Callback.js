@@ -19,3 +19,5 @@ function makeMaggi() {
 }
 
 getMaggi(makeMaggi);
+
+console.log("Running some other function");

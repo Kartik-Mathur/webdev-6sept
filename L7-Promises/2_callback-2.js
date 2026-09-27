@@ -11,10 +11,12 @@ function sayHello(name, cb) {
   }
 }
 
-sayHello("", function (error, msg) {
+sayHello("Mayank", function (error, msg) {
   if (error) {
     console.log(error);
   } else {
     console.log(msg);
   }
 });
+
+console.log("Let me do some other task")

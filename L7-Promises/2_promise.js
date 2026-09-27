@@ -14,10 +14,12 @@ function sayHello(name) {
   });
 }
 
-sayHello("")
+sayHello("Mayank")
   .then((msg) => {
     console.log(msg);
   })
   .catch((err) => {
     console.log(err);
   });
+
+console.log("Let me do some other task");

@@ -14,4 +14,9 @@ Prototype: Its parent of variables where inbuilt functions are
 stored or we can create our own functions such that they can be 
 used by that variable.
 - Prototype is an Object
+
+Prototype ke andar constructor function hota hai
+Toh saare variables jo create hote hai issi se hote 
+(Number) -> Number.prototype se
+(String) -> String.prototype se
 */

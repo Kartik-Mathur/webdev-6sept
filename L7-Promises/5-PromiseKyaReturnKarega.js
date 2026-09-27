@@ -6,7 +6,7 @@ let p = new Promise(function (resolve, reject) {
 
 p.then(function (msg) {
   console.log(msg);
-  return "Hello"; 
+  return "Hello";
 })
   .then((msg) => {
     console.log(msg);

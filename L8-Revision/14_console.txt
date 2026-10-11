@@ -1,0 +1,12 @@
+let url = 'http://movie.com/thor.mp4'
+undefined
+url.split('/')
+(4) ['http:', '', 'movie.com', 'thor.mp4']
+url.split('/').pop()
+'thor.mp4'
+url.split('/').pop().split('.')
+(2) ['thor', 'mp4']
+url.split('/').pop().split('.')[0]
+'thor'
+url.split('/').pop().split('.')[0] + '.zip'
+'thor.zip'

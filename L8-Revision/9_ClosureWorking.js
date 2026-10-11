@@ -23,5 +23,4 @@ let f = createFun();
         console.log(a);
     }
 */
-
 f();

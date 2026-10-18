@@ -19,3 +19,13 @@ document.querySelectorAll() -> Collection of multiple elements
 
 let moviesDiv = document.getElementById('movies')
 console.log(moviesDiv);
+
+let a = document.querySelector('#movies');
+console.log(a);
+
+let b = document.querySelector('.movies');
+console.log(b);
+
+// let f = document.querySelector('.film');
+let f = document.querySelectorAll('.film');
+console.log(f)

@@ -1,0 +1,15 @@
+ /* I want to apply css to all the div on my page */
+ div {
+     background-color: aqua;
+ }
+
+ /* class ke liye we use dot */
+ .mydiv {
+     font-size: 40px;
+ }
+
+ /* id is used with # */
+ #myspan {
+     font-size: 30px;
+     color: red;
+ }

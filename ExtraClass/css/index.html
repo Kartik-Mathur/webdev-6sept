@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS ko hum likhte hai inside style tag -->
+    <!-- 
+    Three ways to apply CSS: 
+      1. Inline : <div style="color: orange;">I am a div</div>
+      2. Internal: <style></style> on my current page only
+      3. External
+    -->
+
+    <style>
+        /* I want to apply css to all the div on my page */
+        div {
+            background-color: aqua;
+        }
+
+        /* class ke liye we use dot */
+        .mydiv {
+            font-size: 40px;
+        }
+
+        /* id is used with # */
+        #myspan {
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline CSS way -->
+    <div style="color: orange;">I am a div</div>
+    <!-- 
+    Three ways to target an element so that we can apply CSS or
+     JS to our element
+     1. Element name: div, span, li
+     2. Class: Kuch specific elements ko target karna hai 
+        - A class can be applied to multiple HTML elements
+     3. Id : Single element ko target karna hai (Roll Number)
+     -->
+    <span id="myspan">I am span</span>
+    <div class="mydiv">I am another div</div>
+    <div class="mydiv">I am another div - 2</div>
+
+    <!-- li.movies -> <li class="movies"></li> -->
+    <!-- span.#myspan -> <span id="myspan">I am span</span> -->
+    
+
+
+</body>
+
+</html>

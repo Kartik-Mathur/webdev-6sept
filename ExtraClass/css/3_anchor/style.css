@@ -1,0 +1,27 @@
+/* 
+Navbar par yaad rakhna
+lvha
+l-> link (by default anchor tag link state mei hota hai)
+v-> visited (agar anchor tag par click kar diya state visited ho jaegi)
+h-> hover (cursor ko upar achor tag ke le jaakar chod dena)
+a-> active (cursor ko anchor tag par le jaakar press kare rakhna)
+ */
+.navlink:link{
+    /* text-decoration -> underline hatane ke liye */
+    text-decoration: none;
+    color: black;
+}
+
+.navlink:visited{
+    color: black;
+}
+
+.navlink:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.navlink:active{
+    color: white;
+    background-color: black;
+}

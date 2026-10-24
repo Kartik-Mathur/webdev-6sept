@@ -6,8 +6,8 @@ let p = new Promise((res, rej) => {
 
 let p1 = new Promise((res, rej) => {
   setTimeout(function () {
-    // res("p1 successfull");
-    rej("Nahi chala p1");
+    res("p1 successfull");
+    // rej("Nahi chala p1");
   }, 4000);
 });
 

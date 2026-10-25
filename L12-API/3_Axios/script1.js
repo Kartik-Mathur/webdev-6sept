@@ -17,8 +17,7 @@ btn.addEventListener("click", () => {
 
   let url = `https://meowfacts.herokuapp.com/?count=${factsCount}`;
   axios
-  .get(url)
-  .then((res) => {
+  .get(url).then((res) => {
     let data = res.data.data;
     console.log(data);
     updateFactsList(data);

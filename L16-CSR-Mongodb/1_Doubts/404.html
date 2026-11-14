@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 600px;
+    }
+
+    .error-code {
+      font-size: clamp(100px, 25vw, 180px);
+      font-weight: 900;
+      line-height: 1;
+      color: #38bdf8;
+      text-shadow: 0 0 40px rgba(56, 189, 248, 0.3);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 20px 0 12px;
+    }
+
+    p {
+      color: #94a3b8;
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .home-btn {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .home-btn:hover {
+      background: #0ea5e9;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(56, 189, 248, 0.25);
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="error-code">404</div>
+
+    <h1>Oops! Page Not Found</h1>
+
+    <p>
+      The page you're looking for doesn't exist,
+      may have been moved, or is temporarily unavailable.
+    </p>
+
+    <a href="/" class="home-btn">← Back to Home</a>
+
+    <div class="footer">
+      © 2026 Your Website. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>

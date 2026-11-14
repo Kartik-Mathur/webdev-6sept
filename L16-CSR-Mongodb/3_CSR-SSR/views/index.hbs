@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    Todo App 
+    <h1>Todo App</h1>
 
     <button id="btn">Get Todos</button>
     <div id="tasks">
-
+        {{#each todos as |t|}}
+        <li>{{t}}</li>
+        {{/each}}
     </div>
 
-    <script src="./script.js"></script>
 </body>
+
 </html>

@@ -2,8 +2,9 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+app.use(express.static(path.join(__dirname, "public")));
 // To make body readable we use
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 /*
 Functional Requirements:
 TODO API:
@@ -27,6 +28,7 @@ app.get("/greet", (req, res) => {
 
 // POST Request: Data is hidden inside body
 app.post("/login", (req, res) => {
+  console.log(req.body);
   const { email, password } = req.body;
   res.send(`${email} logged in`);
 });

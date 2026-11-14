@@ -9,10 +9,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(function (req, res, next) {
   console.log("Running middleware-1");
   // next(); // Toh yeh agle function par aage chala jaega...
-//   const { name } = req.query;
-//   if (!name) {
-//     return res.send("Please provide name");
-//   }
+  //   const { name } = req.query;
+  //   if (!name) {
+  //     return res.send("Please provide name");
+  //   }
   next();
 });
 
@@ -29,9 +29,9 @@ app.use("/person/settings", (req, res, next) => {
   next();
 });
 
-app.get('/person/settings/all',(req,res)=>{
-    res.send("Updated person settings");
-})
+app.get("/person/settings/all", (req, res) => {
+  res.send("Updated person settings");
+});
 
 app.get("/", (req, res) => {
   const { name } = req.query;

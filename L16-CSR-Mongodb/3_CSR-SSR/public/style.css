@@ -1,3 +1,159 @@
-h1{
-    color: orange;
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fb;
+    color: #2d3748;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #1e293b;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+/* Todo Form */
+form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    max-width: 550px;
+    margin: 0 auto 35px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 14px 18px;
+    background: #ffffff;
+    border: 1px solid #dce1eb;
+    border-radius: 10px;
+    color: #2d3748;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+input[type="text"]:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.2);
+}
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+/* Submit Button */
+form button {
+    padding: 14px 24px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+}
+
+/* Tasks Container */
+#tasks {
+    max-width: 550px;
+    margin: auto;
+    list-style: none;
+}
+
+/* Individual Task */
+#tasks li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: #ffffff;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 17px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    transition: 0.3s;
+}
+
+#tasks li:hover {
+    border-color: #a5b4fc;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.1);
+}
+
+/* Links */
+#tasks a {
+    text-decoration: none;
+}
+
+/* Delete Link */
+#tasks a:first-of-type {
+    color: #ef4444;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#tasks a:first-of-type:hover {
+    color: #dc2626;
+}
+
+/* Increase / Decrease Buttons */
+#tasks a button {
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#tasks a button:hover {
+    background: #e0e7ff;
+    border-color: #818cf8;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    #tasks li {
+        flex-wrap: wrap;
+        font-size: 15px;
+    }
 }

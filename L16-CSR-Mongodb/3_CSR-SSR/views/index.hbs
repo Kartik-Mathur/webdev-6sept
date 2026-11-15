@@ -11,11 +11,28 @@
 <body>
     <h1>Todo App</h1>
 
-    <button id="btn">Get Todos</button>
+    <form action="/todos" method="POST">
+        <input type="text" name="name">
+        <button type="submit">Submit</button>
+    </form>
+
     <div id="tasks">
-        {{#each todos as |t|}}
-        <li>{{t}}</li>
-        {{/each}}
+        {{#if todos.length}}
+            {{#each todos as |t|}}
+            <li>
+                {{t}}
+                <a href="/delete-todo/{{t}}">Delete</a>
+                <a href="/increase/{{t}}">
+                    <button>⬆️</button>
+                </a>
+                <a href="/decrease/{{t}}">
+                    <button>👇🏻</button>
+                </a>
+            </li>
+            {{/each}}
+        {{else}}
+            Todos Not Available
+        {{/if}}
     </div>
 
 </body>
